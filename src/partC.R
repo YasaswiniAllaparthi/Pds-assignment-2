@@ -2,7 +2,7 @@
 library(boot)
 set.seed(123)
 n_samples <- 500
-sample_size <- 152
+sample_size <- 150
 boot_samples <- boot(diabetes$BloodPressure, function(data, idx) {
   mean_bp <- mean(data[idx])
   sd_bp <- sd(data[idx])
